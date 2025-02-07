@@ -1,0 +1,30 @@
+---
+title: "Areas"
+author: "Andreu Serrano Briz"
+date: "2025-02-07"
+output: html_document
+---
+
+---
+title: "Cálculo del Área de un Círculo"
+author: "Tu Nombre"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+## Cálculo del Área de un Círculo
+
+El área de un círculo se calcula con la fórmula:
+
+\[
+A = \pi r^2
+\]
+
+```{r area-circulo, echo=TRUE}
+calcular_area <- function(radio) {
+  pi * radio^2
+}
+
+radio <- 5  # Puedes cambiar este valor
+area <- calcular_area(radio)
+area
